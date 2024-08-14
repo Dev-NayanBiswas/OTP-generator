@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="heading__here"><p>Enter your OTP</p></section>
+        <section class="input__container">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </section>
+        <div class="validation__message">
+            <p id="alert__text"></p>
+            <!-- <p class="correct">Correct OTP</p> -->
+        </div>
+        <section class="current_OTP">
+            <span class="otp__number">...</span>
+            <p class="expire__time"></p>
+            <button class="try__button hidden">Let's Try Again</button>
+        </section>
+
+    </main>
+    <footer></footer>
+</body>
+</html>

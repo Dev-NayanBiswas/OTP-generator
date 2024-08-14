@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", Courier, monospace;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-block-size: 100dvh;
+  background: linear-gradient(to top left, #074102cd,#001b00);
+  text-align: center;
+}
+
+section{
+    margin: 5rem auto;
+}
+p{
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+}
+.input__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+input{
+    text-align: center;
+    height: 5rem;
+    width: 5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: xx-large;
+    font-weight: 800;
+    background: rgba(128, 128, 128, 0.293);
+    color: #fff;
+    &:focus{
+        background: rgba(128, 128, 128, 0.482);
+        outline: 5px solid rgba(220, 197, 197, 0.637);
+        color: #8aeef0;
+    }
+}
+.current_OTP{
+    text-align: center;
+    color: gray;
+    & span{
+        font-size: 2rem;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+    }
+    & p{
+        font-size: 1.5rem;
+        margin: 3rem auto;
+        color: rgb(246, 246, 246);
+        font-weight: 500;
+    }
+    & .try__button{
+        cursor: pointer;
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: #03580364;
+        color: #fff;
+        transition: all 0.3s linear;
+        outline: none;
+        /* display: none; */
+        &:hover{
+            background-color: rgba(1, 29, 2, 0.83);
+        }
+    }
+}
+
+.current_OTP .try__button.hidden{
+    display: none;
+}
+
+
+.validation__message{
+    display: inline-block;
+    & .invalid{
+        padding: 0.5rem 2rem;
+        color: red;
+        border: 2px solid red;
+        border-radius: 10px;
+        font-size: 2rem;
+    }
+    & .correct{
+        padding: 0.5rem 2rem;
+        color: rgb(62, 226, 73);
+        border: 2px solid rgb(5, 156, 48);
+        border-radius: 10px;
+        font-size: 2rem;
+    }
+}
